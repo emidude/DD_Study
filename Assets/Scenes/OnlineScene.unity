@@ -235,7 +235,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &246005224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,31 +353,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &1605632715
+--- !u!1 &740415849 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3288611201157810163, guid: 8b362f1c48405e241aaacde7355d89d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 148761556}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1605632718}
-  - component: {fileID: 1605632717}
-  - component: {fileID: 1605632716}
-  m_Layer: 0
-  m_Name: NetworkUpdater
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1605632716
+--- !u!114 &740415850
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1605632715}
+  m_GameObject: {fileID: 740415849}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eafa78f5721bb1f429a76e48a358e543, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointPrefab: {fileID: 1648076411076485459, guid: 20db19aa24a744d438e09dd1c82ee343,
+    type: 3}
+  resolution: 10
+  function: 0
+  fsteam: 0
+  head: {fileID: 148761559}
+  controllerL: {fileID: 148761558}
+  controllerR: {fileID: 148761557}
+  size: 6
+  inputFunction: 1
+--- !u!114 &740415851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740415849}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb16a67f309c52b4791f0383d2074738, type: 3}
@@ -393,13 +403,13 @@ MonoBehaviour:
   controllerR: {fileID: 148761557}
   size: 6
   inputFunction: 1
---- !u!114 &1605632717
+--- !u!114 &740415852
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1605632715}
+  m_GameObject: {fileID: 740415849}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8258ea15b8f74c4889ce485d21cbbb1, type: 3}
@@ -408,24 +418,40 @@ MonoBehaviour:
   m_SceneId:
     m_Value: 0
   m_AssetId:
-    i0: 0
-    i1: 0
-    i2: 0
-    i3: 0
-    i4: 0
-    i5: 0
-    i6: 0
-    i7: 0
-    i8: 0
-    i9: 0
-    i10: 0
-    i11: 0
-    i12: 0
-    i13: 0
-    i14: 0
-    i15: 0
+    i0: 139
+    i1: 54
+    i2: 47
+    i3: 28
+    i4: 72
+    i5: 64
+    i6: 94
+    i7: 36
+    i8: 26
+    i9: 170
+    i10: 205
+    i11: 231
+    i12: 53
+    i13: 93
+    i14: 137
+    i15: 211
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+--- !u!1 &1605632715
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1605632718}
+  m_Layer: 0
+  m_Name: NetworkUpdater
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!4 &1605632718
 Transform:
   m_ObjectHideFlags: 0
@@ -433,7 +459,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1605632715}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []

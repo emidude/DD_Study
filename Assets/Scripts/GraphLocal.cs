@@ -70,11 +70,11 @@ public class GraphLocal : MonoBehaviour
 
 				if (inputFunction)
 				{
-					points[i].transform.localPosition = fI(controllerL, controllerR, u, v, t) * 5;
+					points[i].localPosition = fI(controllerL, controllerR, u, v, t) * 5;
 				}
 				else
 				{
-					points[i].transform.localPosition = f(u, v, t) * 5;
+					points[i].localPosition = f(u, v, t) * 5;
 				}
 			}
 		}
@@ -131,7 +131,7 @@ public class GraphLocal : MonoBehaviour
 
 	const float pi = Mathf.PI;
 
-	//[Command]
+	
 	static Vector3 SimpleSin(SteamVR_Behaviour_Pose cL, SteamVR_Behaviour_Pose cR, float u, float v, float t)
 	{
 		Vector3 p;
