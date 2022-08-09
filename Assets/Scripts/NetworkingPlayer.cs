@@ -26,6 +26,12 @@ public class NetworkingPlayer : NetworkBehaviour
     [SyncVar]
     SteamVR_Behaviour_Pose cL, cR;
 
+    public GameObject cube, cubePf;
+
+    private void Start()
+    {
+        cube = Instantiate(cubePf);
+    }
     /*void Start()
     {
 
@@ -47,7 +53,7 @@ public class NetworkingPlayer : NetworkBehaviour
     {
         if (!isLocalPlayer)
         {
-            return;
+            cube.transform.position = cL.GetAngularVelocity();
         }
 
         updateHeadAndHands();
