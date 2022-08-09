@@ -79,6 +79,7 @@ public class NetworkingPlayer : NetworkBehaviour
         //localRightHand = theLocalPlayer.transform.Find("RightHand").gameObject;
         localRightHand = GameObject.FindWithTag("RightHand");
 
+        //not sure if these tracked are neccary, delete later
         trackedObjRight = localRightHand.GetComponent<SteamVR_TrackedObject>();
         trackedObjLeft = localLeftHand.GetComponent<SteamVR_TrackedObject>();
 
