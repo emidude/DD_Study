@@ -7,6 +7,7 @@ TagManager:
   - LeftHand
   - RightHand
   - Local VR Rig
+  - FolowHead
   layers:
   - Default
   - TransparentFX
