@@ -52,7 +52,9 @@ public class NetworkingPlayer : NetworkBehaviour
 
         updateHeadAndHands();
 
-        CmdTestSend();
+        Debug.Log("left hand controller v=" + cL.GetVelocity());
+
+        Debug.Log("cR.GetAngularVelocity()=" + cR.GetAngularVelocity());
     }
 
 
@@ -142,8 +144,11 @@ public class NetworkingPlayer : NetworkBehaviour
     [Command]
     void CmdTestSend()
     {
-        Debug.Log("cL.GetAngularVelocity()=" + cL.GetAngularVelocity());
-        Debug.Log("cR.GetAngularVelocity()=" + cR.GetAngularVelocity());
+      
+            Debug.Log("cL.GetAngularVelocity()=" + cL.GetAngularVelocity());
+            Debug.Log("cR.GetAngularVelocity()=" + cR.GetAngularVelocity());
+        
+        
     }
 
 
