@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Network.unity
     guid: a5a0fb71352eb1e49bf53fcf9eab6f35
   - enabled: 1
+    path: Assets/Scenes/Net2.unity
+    guid: ee7a379701939b64490be247f62c04b6
+  - enabled: 1
     path: Assets/SteamVR/InteractionSystem/Samples/Interactions_Example.unity
     guid: e3b77830391f10343929883b18f4d5ae
   - enabled: 1
@@ -17,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OnlineScene.unity
     guid: fa91a359d32636844812848e86da676a
+  - enabled: 1
+    path: Assets/Scenes/Online2.unity
+    guid: 1cf887cd1c51fbe43a8fed2c6fa4fa81
   m_configObjects: {}

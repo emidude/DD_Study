@@ -23,7 +23,7 @@ public class NetworkingPlayer : NetworkBehaviour
 
     GameObject defaultHead, defaultLeftHand, defaultRightHand;
 
-    SteamVR_Behaviour_Pose cL;
+    SteamVR_Behaviour_Pose cL, cR;
 
     /*void Start()
     {
@@ -86,6 +86,7 @@ public class NetworkingPlayer : NetworkBehaviour
         trackedObjLeft = localLeftHand.GetComponent<SteamVR_TrackedObject>();
 
         cL = localLeftHand.GetComponent<SteamVR_Behaviour_Pose>();
+        cR = localRightHand.GetComponent<SteamVR_Behaviour_Pose>();
 
     }
 
@@ -138,11 +139,12 @@ public class NetworkingPlayer : NetworkBehaviour
         }
     }
 
-    /*[Command]
+    [Command]
     void CmdTestSend()
     {
-
-    }*/
+        Debug.Log("cL.GetAngularVelocity()=" + cL.GetAngularVelocity());
+        Debug.Log("cR.GetAngularVelocity()=" + cR.GetAngularVelocity());
+    }
 
 
 

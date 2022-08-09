@@ -358,36 +358,3 @@ MonoBehaviour:
   controllerR: {fileID: 148761557}
   size: 6
   inputFunction: 1
---- !u!114 &740415852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 740415849}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8258ea15b8f74c4889ce485d21cbbb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 139
-    i1: 54
-    i2: 47
-    i3: 28
-    i4: 72
-    i5: 64
-    i6: 94
-    i7: 36
-    i8: 26
-    i9: 170
-    i10: 205
-    i11: 231
-    i12: 53
-    i13: 93
-    i14: 137
-    i15: 211
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
