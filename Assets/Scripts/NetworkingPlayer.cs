@@ -47,7 +47,7 @@ public class NetworkingPlayer : NetworkBehaviour
             return;
         }
 
-        if (localHead = null)
+      /*  if (localHead = null)
         {
             localHead = GameObject.Find("FollowHead");
         }
@@ -60,10 +60,8 @@ public class NetworkingPlayer : NetworkBehaviour
         if (localRightHand = null)
         {
             localRightHand = GameObject.Find("RightHand");
-        }
+        }*/
 
-        //sync pos on network
-        // OnStartLocalPlayer();
         updateHeadAndHands();
     }
 
@@ -86,8 +84,11 @@ public class NetworkingPlayer : NetworkBehaviour
         // now link localHMD, localHands to the Rig so that they are
         // automatically filled when the rig moves
         localHead = Camera.main.gameObject; // get HMD
+        Debug.Log("local head = " + localHead);
         localLeftHand = theLocalPlayer.transform.Find("LeftHand").gameObject;
+        //localLeftHand = GameObject.FindWithTag("LeftHand");
         localRightHand = theLocalPlayer.transform.Find("RightHand").gameObject;
+        //localRightHand = GameObject.FindWithTag("RightHand");
 
         trackedObjRight = localRightHand.GetComponent<SteamVR_TrackedObject>();
         trackedObjLeft = localLeftHand.GetComponent<SteamVR_TrackedObject>();
@@ -118,8 +119,6 @@ public class NetworkingPlayer : NetworkBehaviour
                 Debug.Log("HEADLESS detected");
             }
 
-            
-           
                 networkedHead.transform.position = localHead.transform.position;
                 networkedHead.transform.rotation = localHead.transform.rotation;
 
