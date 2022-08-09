@@ -132,6 +132,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerDD
       objectReference: {fileID: 0}
+    - target: {fileID: 3288611201157810163, guid: 8b362f1c48405e241aaacde7355d89d3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Local VR Rig
+      objectReference: {fileID: 0}
     - target: {fileID: 3288611201158133643, guid: 8b362f1c48405e241aaacde7355d89d3,
         type: 3}
       propertyPath: m_LocalPosition.x
