@@ -73,7 +73,8 @@ public class NetworkingPlayer : NetworkBehaviour
         // now link localHMD, localHands to the Rig so that they are
         // automatically filled when the rig moves
         //localHead = Camera.main.gameObject; // get HMD
-        localHead = theLocalPlayer.transform.Find("FolowHead").gameObject;
+        //localHead = theLocalPlayer.transform.Find("FolowHead").gameObject;
+        localHead = GameObject.FindWithTag("FolowHead");
         Debug.Log("local head = " + localHead);
         //localLeftHand = theLocalPlayer.transform.Find("LeftHand").gameObject;
         localLeftHand = GameObject.FindWithTag("LeftHand");
