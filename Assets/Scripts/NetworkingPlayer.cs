@@ -23,6 +23,7 @@ public class NetworkingPlayer : NetworkBehaviour
 
     GameObject defaultHead, defaultLeftHand, defaultRightHand;
 
+    [SyncVar]
     SteamVR_Behaviour_Pose cL, cR;
 
     /*void Start()
@@ -51,7 +52,7 @@ public class NetworkingPlayer : NetworkBehaviour
 
         updateHeadAndHands();
 
-        Debug.Log("left hand controller v=" + cL.GetVelocity());
+        CmdTestSend();
     }
 
 
@@ -103,7 +104,6 @@ public class NetworkingPlayer : NetworkBehaviour
             // we copy the values from the Rig's HMD
             // and hand positions so they can be
             // used for local positioning
-
             // prevent headless version of app from crashing
             // depends on SteamVR version if HMD is null or simply won't move
             if (localHead == null)
