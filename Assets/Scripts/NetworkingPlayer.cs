@@ -79,8 +79,8 @@ public class NetworkingPlayer : NetworkBehaviour
         //localRightHand = theLocalPlayer.transform.Find("RightHand").gameObject;
         localRightHand = GameObject.FindWithTag("RightHand");
 
-        trackedObjRight = localRightHand.GetComponent<SteamVR_TrackedObject>();
-        trackedObjLeft = localLeftHand.GetComponent<SteamVR_TrackedObject>();
+       /* trackedObjRight = localRightHand.GetComponent<SteamVR_TrackedObject>();
+        trackedObjLeft = localLeftHand.GetComponent<SteamVR_TrackedObject>();*/
 
         cL = localLeftHand.GetComponent<SteamVR_Behaviour_Pose>();
 
@@ -135,7 +135,7 @@ public class NetworkingPlayer : NetworkBehaviour
         }
     }
 
-   /* [Command]
+    /*[Command]
     void CmdTestSend()
     {
 
