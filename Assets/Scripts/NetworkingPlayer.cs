@@ -23,7 +23,9 @@ public class NetworkingPlayer : NetworkBehaviour
 
     GameObject defaultHead, defaultLeftHand, defaultRightHand;
 
-    void Start()
+    SteamVR_Behaviour_Pose cL;
+
+    /*void Start()
     {
 
         if (!isLocalPlayer)
@@ -35,10 +37,10 @@ public class NetworkingPlayer : NetworkBehaviour
         Debug.Log("Start of the vr player");
 
         //disabled conroller meshes at VR player side so it cannont be viewed by local player
-        /*networkedHead.GetComponent<MeshRenderer>().enabled = false; //commented out for testing    
+        *//*networkedHead.GetComponent<MeshRenderer>().enabled = false; //commented out for testing    
         networkedLeftHand.GetComponent<MeshRenderer>().enabled = false;
-        networkedRightHand.GetComponent<MeshRenderer>().enabled = false;*/
-    }
+        networkedRightHand.GetComponent<MeshRenderer>().enabled = false;*//*
+    }*/
 
     void Update()
     {
@@ -47,22 +49,9 @@ public class NetworkingPlayer : NetworkBehaviour
             return;
         }
 
-      /*  if (localHead = null)
-        {
-            localHead = GameObject.Find("FollowHead");
-        }
-
-        if (localLeftHand = null)
-        {
-            localLeftHand = GameObject.Find("LeftHand");
-        }
-
-        if (localRightHand = null)
-        {
-            localRightHand = GameObject.Find("RightHand");
-        }*/
-
         updateHeadAndHands();
+
+        Debug.Log("left hand controller v=" + cL.GetVelocity());
     }
 
 
@@ -93,6 +82,8 @@ public class NetworkingPlayer : NetworkBehaviour
         trackedObjRight = localRightHand.GetComponent<SteamVR_TrackedObject>();
         trackedObjLeft = localLeftHand.GetComponent<SteamVR_TrackedObject>();
 
+        cL = localLeftHand.GetComponent<SteamVR_Behaviour_Pose>();
+
     }
 
     void updateHeadAndHands()
@@ -119,28 +110,36 @@ public class NetworkingPlayer : NetworkBehaviour
                 Debug.Log("HEADLESS detected");
             }
 
-                networkedHead.transform.position = localHead.transform.position;
-                networkedHead.transform.rotation = localHead.transform.rotation;
+            networkedHead.transform.position = localHead.transform.position;
+            networkedHead.transform.rotation = localHead.transform.rotation;
 
-                if (localLeftHand) //should return true if left controller connected
-                {
-                    // we need to check in case player left the hand unconnected
-                    networkedLeftHand.transform.position = localLeftHand.transform.position;
-                    networkedLeftHand.transform.rotation = localLeftHand.transform.rotation;
-                }
+            if (localLeftHand) //we need to check in case player left the hand unconnected, should return true if left controller connected
+            {
+                networkedLeftHand.transform.position = localLeftHand.transform.position;
+                networkedLeftHand.transform.rotation = localLeftHand.transform.rotation;
+            }
+            else
+            {
+                Debug.Log("left hand not connected");
+            }
 
-                if (localRightHand)
-                {
-                    // only if right hand is connected
-                    networkedRightHand.transform.position = localRightHand.transform.position;
-                    networkedRightHand.transform.rotation = localRightHand.transform.rotation;
-                }
-
-            
+            if (localRightHand)// only if right hand is connected
+            {
+                networkedRightHand.transform.position = localRightHand.transform.position;
+                networkedRightHand.transform.rotation = localRightHand.transform.rotation;
+            }
+            else
+            {
+                Debug.Log("right hand not connected");
+            }
         }
-
     }
 
+   /* [Command]
+    void CmdTestSend()
+    {
+
+    }*/
 
 
 
