@@ -85,10 +85,10 @@ public class NetworkingPlayer : NetworkBehaviour
         // automatically filled when the rig moves
         localHead = Camera.main.gameObject; // get HMD
         Debug.Log("local head = " + localHead);
-        localLeftHand = theLocalPlayer.transform.Find("LeftHand").gameObject;
-        //localLeftHand = GameObject.FindWithTag("LeftHand");
-        localRightHand = theLocalPlayer.transform.Find("RightHand").gameObject;
-        //localRightHand = GameObject.FindWithTag("RightHand");
+        //localLeftHand = theLocalPlayer.transform.Find("LeftHand").gameObject;
+        localLeftHand = GameObject.FindWithTag("LeftHand");
+        //localRightHand = theLocalPlayer.transform.Find("RightHand").gameObject;
+        localRightHand = GameObject.FindWithTag("RightHand");
 
         trackedObjRight = localRightHand.GetComponent<SteamVR_TrackedObject>();
         trackedObjLeft = localLeftHand.GetComponent<SteamVR_TrackedObject>();
