@@ -57,7 +57,14 @@ public class NetworkingPlayer : NetworkBehaviour
 
         if (isLocalPlayer)
         {
-            CmdUpdateCubes(cL.GetVelocity());
+            if (float.IsNaN(cL.GetVelocity().x) || float.IsNaN(cL.GetVelocity().y) || float.IsNaN(cL.GetVelocity().z))
+            {
+                Debug.Log("NAN");
+            }
+            else
+            {
+                CmdUpdateCubes(cL.GetVelocity());
+            }
         }
         
     }
@@ -90,8 +97,8 @@ public class NetworkingPlayer : NetworkBehaviour
         localRightHand = GameObject.FindWithTag("RightHand");
 
         //not sure if these tracked are neccary, delete later
-        trackedObjRight = localRightHand.GetComponent<SteamVR_TrackedObject>();
-        trackedObjLeft = localLeftHand.GetComponent<SteamVR_TrackedObject>();
+        /*trackedObjRight = localRightHand.GetComponent<SteamVR_TrackedObject>();
+        trackedObjLeft = localLeftHand.GetComponent<SteamVR_TrackedObject>();*/
 
         cL = localLeftHand.GetComponent<SteamVR_Behaviour_Pose>();
         cR = localRightHand.GetComponent<SteamVR_Behaviour_Pose>();
@@ -152,6 +159,10 @@ public class NetworkingPlayer : NetworkBehaviour
     void CmdSpawnCubes()
     {
         cube = Instantiate(cubePf);
+        if (!cube)
+        {
+            Debug.Log("CUBE IS NULL");
+        }
         NetworkServer.Spawn(cube);
     }
 
