@@ -30,10 +30,7 @@ public class NetworkingPlayer : NetworkBehaviour
 
     private void Start()
     {
-        if (isLocalPlayer)
-        {
-            CmdSpawnCubes();
-        }
+        
     }
     /*void Start()
     {
@@ -98,6 +95,8 @@ public class NetworkingPlayer : NetworkBehaviour
 
         cL = localLeftHand.GetComponent<SteamVR_Behaviour_Pose>();
         cR = localRightHand.GetComponent<SteamVR_Behaviour_Pose>();
+
+        CmdSpawnCubes();
 
     }
 
