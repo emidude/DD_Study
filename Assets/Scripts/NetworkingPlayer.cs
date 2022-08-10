@@ -28,6 +28,8 @@ public class NetworkingPlayer : NetworkBehaviour
 
     public GameObject cube, cubePf;
 
+    bool spawned = false;
+
     private void Start()
     {
         
@@ -51,7 +53,23 @@ public class NetworkingPlayer : NetworkBehaviour
 
     void Update()
     {
-        
+        if (isLocalPlayer)
+        {
+            if (spawned == false)
+            {
+                if (!NetworkServer.active)
+                {
+                    Debug.Log("not active yet");
+                    return;
+                }
+                else
+                {
+                    CmdSpawnCubes();
+                }
+            }
+
+        }
+
 
         updateHeadAndHands();
 
@@ -106,7 +124,6 @@ public class NetworkingPlayer : NetworkBehaviour
 
 
         Debug.Log("server active" + NetworkServer.active);
-        CmdSpawnCubes();
     }
 
    
