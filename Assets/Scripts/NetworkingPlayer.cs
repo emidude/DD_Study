@@ -103,14 +103,11 @@ public class NetworkingPlayer : NetworkBehaviour
         cL = localLeftHand.GetComponent<SteamVR_Behaviour_Pose>();
         cR = localRightHand.GetComponent<SteamVR_Behaviour_Pose>();
 
-        
-
-    }
-
-    public override void OnStartClient()
-    {
         CmdSpawnCubes();
+
     }
+
+   
 
     void updateHeadAndHands()
     {
