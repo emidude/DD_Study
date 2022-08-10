@@ -30,7 +30,10 @@ public class NetworkingPlayer : NetworkBehaviour
 
     private void Start()
     {
-        CmdSpawnCubes();
+        if (isLocalPlayer)
+        {
+            CmdSpawnCubes();
+        }
     }
     /*void Start()
     {
@@ -55,7 +58,11 @@ public class NetworkingPlayer : NetworkBehaviour
 
         updateHeadAndHands();
 
-        CmdUpdateCubes(cL.GetVelocity());
+        if (isLocalPlayer)
+        {
+            CmdUpdateCubes(cL.GetVelocity());
+        }
+        
     }
 
 
@@ -152,10 +159,9 @@ public class NetworkingPlayer : NetworkBehaviour
     [Command]
     void CmdUpdateCubes(Vector3 v3)
     {
-        if (!isLocalPlayer)
-        {
+      
             cube.transform.position = v3;
-        }
+
     }
 
 }
