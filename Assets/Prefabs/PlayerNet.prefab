@@ -201,7 +201,7 @@ MonoBehaviour:
   networkedLeftHand: {fileID: 8425520600003480410}
   networkedRightHand: {fileID: 8425520598223998757}
   cube: {fileID: 0}
-  cubePf: {fileID: 1645494586563644427, guid: 20db19aa24a744d438e09dd1c82ee343, type: 3}
+  cubePf: {fileID: 1223016012747116, guid: 16c2e13a22648d544ba10e09297cd061, type: 3}
 --- !u!114 &8425520599932654301
 MonoBehaviour:
   m_ObjectHideFlags: 0

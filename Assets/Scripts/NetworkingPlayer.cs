@@ -152,7 +152,10 @@ public class NetworkingPlayer : NetworkBehaviour
     [Command]
     void CmdUpdateCubes(Vector3 v3)
     {
-        cube.transform.position = v3;
+        if (!isLocalPlayer)
+        {
+            cube.transform.position = v3;
+        }
     }
 
 }
