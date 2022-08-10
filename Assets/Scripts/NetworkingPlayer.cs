@@ -30,7 +30,7 @@ public class NetworkingPlayer : NetworkBehaviour
 
     private void Start()
     {
-        cube = Instantiate(cubePf);
+        CmdSpawnCubes();
     }
     /*void Start()
     {
@@ -51,16 +51,11 @@ public class NetworkingPlayer : NetworkBehaviour
 
     void Update()
     {
-        if (!isLocalPlayer)
-        {
-            cube.transform.position = cL.GetAngularVelocity();
-        }
+        
 
         updateHeadAndHands();
 
-        Debug.Log("left hand controller v=" + cL.GetVelocity());
-
-        Debug.Log("cR.GetAngularVelocity()=" + cR.GetAngularVelocity());
+        CmdUpdateCubes(cL.GetVelocity());
     }
 
 
@@ -148,15 +143,16 @@ public class NetworkingPlayer : NetworkBehaviour
     }
 
     [Command]
-    void CmdTestSend()
+    void CmdSpawnCubes()
     {
-      
-            Debug.Log("cL.GetAngularVelocity()=" + cL.GetAngularVelocity());
-            Debug.Log("cR.GetAngularVelocity()=" + cR.GetAngularVelocity());
-        
-        
+        cube = Instantiate(cubePf);
+        NetworkServer.Spawn(cube);
     }
 
-
+    [Command]
+    void CmdUpdateCubes(Vector3 v3)
+    {
+        cube.transform.position = v3;
+    }
 
 }
