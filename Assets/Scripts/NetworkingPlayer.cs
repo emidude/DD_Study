@@ -64,6 +64,7 @@ public class NetworkingPlayer : NetworkBehaviour
                 }
                 else
                 {
+                    Debug.Log("NetworkServer.active?=" + NetworkServer.active);
                     CmdSpawnCubes();
                     spawned = true;
                 }
