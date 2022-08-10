@@ -65,6 +65,7 @@ public class NetworkingPlayer : NetworkBehaviour
                 else
                 {
                     CmdSpawnCubes();
+                    spawned = true;
                 }
             }
 
