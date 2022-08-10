@@ -103,8 +103,13 @@ public class NetworkingPlayer : NetworkBehaviour
         cL = localLeftHand.GetComponent<SteamVR_Behaviour_Pose>();
         cR = localRightHand.GetComponent<SteamVR_Behaviour_Pose>();
 
-        CmdSpawnCubes();
+       
 
+        while (!NetworkServer.active)
+        {
+            Debug.Log("network server not active yet");
+        }
+        CmdSpawnCubes();
     }
 
    
