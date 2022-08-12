@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8078ceb2-1743-4c5a-9dc0-e8639c2dc7c4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/OnlineScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/OnlineScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/Interactions_Example.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/Interactions_Example.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unityProject.vrmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/unityProject.vrmanifest" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/NetworkingPlayer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1330">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
+              <folding>
+                <marker date="1660099430769" expanded="false" signature="6:124" ph="..." />
+                <marker date="1660099430769" expanded="true" signature="175:6091" ph="{...}" />
+                <marker date="1660099430769" expanded="true" signature="1037:1058" ph="{...}" />
+                <marker date="1660099430769" expanded="true" signature="1063:1305" ph="/* void Start() ... */" />
+                <marker date="1660099430769" expanded="true" signature="1305:1545" ph="/* networkedHead.GetComponent&lt;MeshRenderer&gt;().enabled = false; //commented out for testing ... */" />
+                <marker date="1660099430769" expanded="true" signature="1545:1555" ph="/* } ... */" />
+                <marker date="1660099430769" expanded="true" signature="1574:2427" ph="{...}" />
+                <marker date="1660099430769" expanded="true" signature="1607:2056" ph="{...}" />
+                <marker date="1660099430769" expanded="true" signature="1651:2045" ph="{...}" />
+                <marker date="1660099430769" expanded="true" signature="1708:1821" ph="{...}" />
+                <marker date="1660099430769" expanded="true" signature="1842:2031" ph="{...}" />
+                <marker date="1660099430769" expanded="true" signature="2116:2412" ph="{...}" />
+                <marker date="1660099430769" expanded="true" signature="2245:2307" ph="{...}" />
+                <marker date="1660099430769" expanded="true" signature="2324:2402" ph="{...}" />
+                <marker date="1660099430769" expanded="true" signature="2475:3954" ph="{...}" />
+                <marker date="1660099430769" expanded="true" signature="2490:2554" ph="/* this is ONLY called on local player ... */" />
+                <marker date="1660099430769" expanded="true" signature="2770:2880" ph="{...}" />
+                <marker date="1660099430769" expanded="true" signature="2891:3136" ph="/* now link localHMD, localHands to the Rig so that they are ... */" />
+                <marker date="1660099430769" expanded="true" signature="3597:3750" ph="/* trackedObjRight = localRightHand.GetComponent&lt;SteamVR_TrackedObject&gt;(); ... */" />
+                <marker date="1660099430769" expanded="true" signature="3990:5774" ph="{...}" />
+                <marker date="1660099430769" expanded="true" signature="4025:4111" ph="{...}" />
+                <marker date="1660099430769" expanded="true" signature="4124:5768" ph="{...}" />
+                <marker date="1660099430769" expanded="true" signature="4147:4457" ph="/* we are the local player. ... */" />
+                <marker date="1660099430769" expanded="true" signature="4492:4780" ph="{...}" />
+                <marker date="1660099430769" expanded="true" signature="5076:5282" ph="{...}" />
+                <marker date="1660099430769" expanded="true" signature="5299:5381" ph="{...}" />
+                <marker date="1660099430769" expanded="true" signature="5448:5658" ph="{...}" />
+                <marker date="1660099430769" expanded="true" signature="5675:5758" ph="{...}" />
+                <marker date="1660099430769" expanded="true" signature="5814:5975" ph="{...}" />
+                <marker date="1660099430769" expanded="true" signature="5875:5934" ph="{...}" />
+                <marker date="1660099430769" expanded="true" signature="6026:6088" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.8/Runtime/NetworkServer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="35929">
+              <caret line="1897" column="39" selection-start-line="1897" selection-start-column="39" selection-end-line="1897" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.8/Runtime/NetworkScene.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2546">
+              <caret line="134" selection-start-line="134" selection-end-line="134" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/SteamVR/Input/SteamVR_Skeleton_Pose.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1659918943116" expanded="false" signature="87:175" ph="..." />
+                <marker date="1659918943116" expanded="true" signature="195:5023" ph="{...}" />
+                <marker date="1659918943116" expanded="true" signature="255:1307" ph="{...}" />
+                <marker date="1659918943116" expanded="true" signature="784:992" ph="{...}" />
+                <marker date="1659918943116" expanded="true" signature="1071:1301" ph="{...}" />
+                <marker date="1659918943116" expanded="true" signature="1371:4100" ph="{...}" />
+                <marker date="1659918943116" expanded="true" signature="2063:2184" ph="/// Get extension type for a particular finger. Thumb is 0, Index is 1, etc. ... " />
+                <marker date="1659918943116" expanded="true" signature="2272:2829" ph="{...}" />
+                <marker date="1659918943116" expanded="true" signature="3152:3206" ph="{...}" />
+                <marker date="1659918943116" expanded="true" signature="3298:4094" ph="{...}" />
+                <marker date="1659918943116" expanded="true" signature="3431:4018" ph="{...}" />
+                <marker date="1659918943116" expanded="true" signature="4155:4231" ph="{...}" />
+                <marker date="1659918943116" expanded="true" signature="4291:5021" ph="{...}" />
+                <marker date="1659918943116" expanded="true" signature="4428:4708" ph="{...}" />
+                <marker date="1659918943116" expanded="true" signature="4454:4698" ph="{...}" />
+                <marker date="1659918943116" expanded="true" signature="4782:5015" ph="{...}" />
+                <marker date="1659918943116" expanded="true" signature="4808:5005" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/XYsendToSlicing.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="25" column="72" lean-forward="true" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
+              <folding>
+                <marker date="1567366615063" expanded="false" signature="6:112" ph="..." />
+                <marker date="1567366615063" expanded="true" signature="158:1042" ph="{...}" />
+                <marker date="1567366615063" expanded="true" signature="478:753" ph="{...}" />
+                <marker date="1567366615063" expanded="true" signature="519:598" ph="{...}" />
+                <marker date="1567366615063" expanded="true" signature="811:1040" ph="{...}" />
+                <marker date="1567366615063" expanded="true" signature="863:1034" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NetworkingPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.8/Runtime/NetworkScene.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SteamVR/Input/SteamVR_Skeleton_Pose.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/XYsendToSlicing.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.8/Runtime/NetworkServer.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="108" />
+    <option name="y" value="37" />
+    <option name="width" value="1801" />
+    <option name="height" value="1100" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8078ceb2-1743-4c5a-9dc0-e8639c2dc7c4" name="Default Changelist" comment="" />
+      <created>1660092128770</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660092128770</updated>
+      <workItem from="1660092135766" duration="1632000" />
+      <workItem from="1660098969578" duration="186000" />
+      <workItem from="1660171077606" duration="595000" />
+      <workItem from="1660233247395" duration="32000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2445000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="108" y="37" width="1801" height="1100" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Unity" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Unit Tests" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="14" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/NetworkingPlayer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1330">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+          <folding>
+            <marker date="1660099430769" expanded="false" signature="6:124" ph="..." />
+            <marker date="1660099430769" expanded="true" signature="175:6091" ph="{...}" />
+            <marker date="1660099430769" expanded="true" signature="1037:1058" ph="{...}" />
+            <marker date="1660099430769" expanded="true" signature="1063:1305" ph="/* void Start() ... */" />
+            <marker date="1660099430769" expanded="true" signature="1305:1545" ph="/* networkedHead.GetComponent&lt;MeshRenderer&gt;().enabled = false; //commented out for testing ... */" />
+            <marker date="1660099430769" expanded="true" signature="1545:1555" ph="/* } ... */" />
+            <marker date="1660099430769" expanded="true" signature="1574:2427" ph="{...}" />
+            <marker date="1660099430769" expanded="true" signature="1607:2056" ph="{...}" />
+            <marker date="1660099430769" expanded="true" signature="1651:2045" ph="{...}" />
+            <marker date="1660099430769" expanded="true" signature="1708:1821" ph="{...}" />
+            <marker date="1660099430769" expanded="true" signature="1842:2031" ph="{...}" />
+            <marker date="1660099430769" expanded="true" signature="2116:2412" ph="{...}" />
+            <marker date="1660099430769" expanded="true" signature="2245:2307" ph="{...}" />
+            <marker date="1660099430769" expanded="true" signature="2324:2402" ph="{...}" />
+            <marker date="1660099430769" expanded="true" signature="2475:3954" ph="{...}" />
+            <marker date="1660099430769" expanded="true" signature="2490:2554" ph="/* this is ONLY called on local player ... */" />
+            <marker date="1660099430769" expanded="true" signature="2770:2880" ph="{...}" />
+            <marker date="1660099430769" expanded="true" signature="2891:3136" ph="/* now link localHMD, localHands to the Rig so that they are ... */" />
+            <marker date="1660099430769" expanded="true" signature="3597:3750" ph="/* trackedObjRight = localRightHand.GetComponent&lt;SteamVR_TrackedObject&gt;(); ... */" />
+            <marker date="1660099430769" expanded="true" signature="3990:5774" ph="{...}" />
+            <marker date="1660099430769" expanded="true" signature="4025:4111" ph="{...}" />
+            <marker date="1660099430769" expanded="true" signature="4124:5768" ph="{...}" />
+            <marker date="1660099430769" expanded="true" signature="4147:4457" ph="/* we are the local player. ... */" />
+            <marker date="1660099430769" expanded="true" signature="4492:4780" ph="{...}" />
+            <marker date="1660099430769" expanded="true" signature="5076:5282" ph="{...}" />
+            <marker date="1660099430769" expanded="true" signature="5299:5381" ph="{...}" />
+            <marker date="1660099430769" expanded="true" signature="5448:5658" ph="{...}" />
+            <marker date="1660099430769" expanded="true" signature="5675:5758" ph="{...}" />
+            <marker date="1660099430769" expanded="true" signature="5814:5975" ph="{...}" />
+            <marker date="1660099430769" expanded="true" signature="5875:5934" ph="{...}" />
+            <marker date="1660099430769" expanded="true" signature="6026:6088" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.8/Runtime/NetworkServer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35929">
+          <caret line="1897" column="39" selection-start-line="1897" selection-start-column="39" selection-end-line="1897" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.8/Runtime/NetworkScene.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2546">
+          <caret line="134" selection-start-line="134" selection-end-line="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/SteamVR/Input/SteamVR_Skeleton_Pose.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1659918943116" expanded="false" signature="87:175" ph="..." />
+            <marker date="1659918943116" expanded="true" signature="255:1307" ph="{...}" />
+            <marker date="1659918943116" expanded="true" signature="784:992" ph="{...}" />
+            <marker date="1659918943116" expanded="true" signature="1071:1301" ph="{...}" />
+            <marker date="1659918943116" expanded="true" signature="1371:4100" ph="{...}" />
+            <marker date="1659918943116" expanded="true" signature="2063:2184" ph="/// Get extension type for a particular finger. Thumb is 0, Index is 1, etc. ... " />
+            <marker date="1659918943116" expanded="true" signature="2272:2829" ph="{...}" />
+            <marker date="1659918943116" expanded="true" signature="3152:3206" ph="{...}" />
+            <marker date="1659918943116" expanded="true" signature="3298:4094" ph="{...}" />
+            <marker date="1659918943116" expanded="true" signature="3431:4018" ph="{...}" />
+            <marker date="1659918943116" expanded="true" signature="4155:4231" ph="{...}" />
+            <marker date="1659918943116" expanded="true" signature="4291:5021" ph="{...}" />
+            <marker date="1659918943116" expanded="true" signature="4428:4708" ph="{...}" />
+            <marker date="1659918943116" expanded="true" signature="4454:4698" ph="{...}" />
+            <marker date="1659918943116" expanded="true" signature="4782:5015" ph="{...}" />
+            <marker date="1659918943116" expanded="true" signature="4808:5005" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/XYsendToSlicing.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="25" column="72" lean-forward="true" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
+          <folding>
+            <marker date="1567366615063" expanded="false" signature="6:112" ph="..." />
+            <marker date="1567366615063" expanded="true" signature="158:1042" ph="{...}" />
+            <marker date="1567366615063" expanded="true" signature="478:753" ph="{...}" />
+            <marker date="1567366615063" expanded="true" signature="519:598" ph="{...}" />
+            <marker date="1567366615063" expanded="true" signature="811:1040" ph="{...}" />
+            <marker date="1567366615063" expanded="true" signature="863:1034" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
